@@ -16,3 +16,8 @@ subplot(212); plot(t, real(xinv));         % Γράφημα σήματος
 xlabel('Time (s)'); ylabel('Amplitude');   % Ετικέτες
 title('Inverse F.T. for x(t) = exp(-at)'); % Τίτλος
 axis([0 t(end)/2 0 1.2]); grid;            % Μεγέθυνση
+err = abs(x - real(xinv));                 % Συνάρτηση σφάλματος
+plot(t, err);                              % Γράφημα
+title('Absolute Error function'); grid;    % Τίτλος
+xlabel('Time (s)'); ylabel('Amplitude');   % Ετικέτες
+E = Dt*sum(err.^2);                        % Ενέργεια σφάλματος
