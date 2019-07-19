@@ -14,3 +14,13 @@ Phi = conj(X).*Y;                 % Διαφασμ. Πυκν. Ενέργειας
 tp = -D:Dt:D;                     % Άξονας χρόνου
 Minv = exp(j*2*pi*f'*tp);         % Πίνακας σύνθεσης
 phi_iFT = Df*Phi*Minv;            % Ετεροσυσχέτιση μέσω Μετασχ. Fourier
+
+figure; subplot(411); plot(t, x); grid;                     % Σήμα x(t)
+title('x(t) = exp(-2t)u(t)'); ylabel('Amplitude');          % Ετικέτες
+subplot(412); plot(t, y); grid;                             % Σήμα y(t)
+title('y(t) = exp(-t)u(t)'); ylabel('Amplitude');           % Ετικέτες
+subplot(413); plot(lags*Dt, phi); grid;                     % Σήμα φxy(τ)
+title('Cross-correlation \phi_{xy}(t)'); grid;              % Ετικέτες
+subplot(414); plot(tp, real(phi_iFT)); ylabel('Amplitude'); % F^-1{Φxy(f)}
+title('Cross-correlation \phi_{xy}(t) via inverse F.T.');   % Τίτλος
+xlabel('Time (s)'); ylabel('Amplitude');                    % Ετικέτες
