@@ -24,3 +24,12 @@ ylabel('Magnitude'); xlabel('Frequency (\omega_k)');     % Ετικέτες
 subplot(212); plot(omega, ph2); grid;                    % Γράφημα <X2(e^j2πkN)
 title('Phase Spectrum of X_2(e^{j2\pi k/N})');           % Τίτλος
 ylabel('Phase'); xlabel('Frequency (\omega_k)');         % Ετικέτες
+
+x1est = ifft(X1);                                          % Αντίστρ. FFT hat{x}1[n]
+x2est = ifft(X2);                                          % Αντίστρ. FFT hat{x}2[n]
+figure; subplot(211); stem(0:10, real(x1est(1:11))); grid; % Γράφημα hat{x}1[n]
+ylabel('Amplitude'); xlabel('Time (samples)');             % Ετικέτες
+title('x_1[n] via IFFT');                                  % Τίτλος
+subplot(212); stem(0:40, real(x2est(1:41))); grid;         % Γράφημα hat{x}2[n]
+ylabel('Amplitude'); xlabel('Time (samples)');             % Ετικέτες
+title('x_2[n] via IFFT');                                  % Τίτλος
