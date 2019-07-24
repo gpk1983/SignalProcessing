@@ -10,3 +10,7 @@ title('Input speech signal');                   % Τίτλος
 subplot(212); plot(t, y); grid;                 % Έξοδος φίλτρου
 xlabel('Time (s)'); ylabel('Amplitude');        % Ετικέτες
 title('Output speech signal');                  % Τίτλος
+
+soundsc(x, fs);                                 % Ακούστε το!
+pause(5);
+soundsc(y, fs);                                 % Ακούστε το!
