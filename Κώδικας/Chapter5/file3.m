@@ -6,7 +6,7 @@ for k = 1:N                       % Βρόχος επανάληψης
 Xk = 1/(a*T0+j*2*pi*k)*...        % Συντελεστές Xk
 (1-((-1)^k)*exp(-a*T0/2));
 expsig = Xk*exp(j*2*pi*k/T0*t);   % Συναρτήσεις βάσης
-x = x + expsig + conj(expsgig);   % Σύνθεση σήματος
+x = x + expsig + conj(expsig);   % Σύνθεση σήματος
 end
 x = x + X0;                       % Προσθήκη X0
 subplot(212); plot(t, x);         % Σειρά Fourier
