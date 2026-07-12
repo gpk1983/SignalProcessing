@@ -209,7 +209,7 @@ pyOpenSSL @ file:///opt/conda/conda-bld/pyopenssl_1643788558760/work
 pyparsing @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_7f_7lba6rl/croots/recipe/pyparsing_1661452540662/work
 pyrsistent @ file:///C:/ci/pyrsistent_1636093225342/work
 PySocks @ file:///C:/ci/pysocks_1605307512533/work
-pytest==7.1.2
+pytest==9.0.3
 python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
 python-lsp-black @ file:///tmp/build/80754af9/python-lsp-black_1634232156041/work
 python-lsp-jsonrpc==1.0.0
