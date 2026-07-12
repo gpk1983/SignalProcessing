@@ -38,7 +38,7 @@ requirements.txt
 Παράδειγμα:
 
 ```text
-C:\Projects\MyProject\requirements.txt
+C:\Projects\SPBook\requirements.txt
 ```
 
 ## 3. Μετάβαση στον φάκελο του έργου
@@ -46,7 +46,7 @@ C:\Projects\MyProject\requirements.txt
 Ανοίξτε **Command Prompt** και μεταβείτε στον φάκελο όπου βρίσκεται το αρχείο:
 
 ```bat
-cd /d C:\Projects\MyProject
+cd /d C:\Projects\SPBook
 ```
 
 Η επιλογή `/d` επιτρέπει και την αλλαγή δίσκου, εφόσον χρειάζεται.
